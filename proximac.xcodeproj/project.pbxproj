@@ -44,7 +44,7 @@
 		C163FE811B09134800149D9A /* js0n.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = js0n.c; path = "proximac-cli/js0n.c"; sourceTree = SOURCE_ROOT; };
 		C163FE821B09134800149D9A /* js0n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = js0n.h; path = "proximac-cli/js0n.h"; sourceTree = SOURCE_ROOT; };
 		C163FE831B09134800149D9A /* socks5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socks5.h; path = "proximac-cli/socks5.h"; sourceTree = SOURCE_ROOT; };
-		C163FE891B09137400149D9A /* libuv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libuv.1.dylib; path = ../../../../../../usr/local/lib/libuv.1.dylib; sourceTree = SOURCE_ROOT; };
+               C163FE891B09137400149D9A /* libuv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libuv.1.dylib; path = libuv.1.dylib; sourceTree = SDKROOT; };
 		C179191A1B0854380013F649 /* proximac.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proximac.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		C179191E1B0854380013F649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C179191F1B0854380013F649 /* proximac.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = proximac.c; sourceTree = "<group>"; };
@@ -258,10 +258,11 @@
 					/usr/local/include,
 					/usr/include,
 				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/usr/lib,
-				);
+                               LIBRARY_SEARCH_PATHS = (
+                                       /usr/local/lib,
+                                       /usr/lib,
+                                       /opt/homebrew/lib,
+                               );
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -276,10 +277,11 @@
 					/usr/local/include,
 					/usr/include,
 				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/usr/lib,
-				);
+                               LIBRARY_SEARCH_PATHS = (
+                                       /usr/local/lib,
+                                       /usr/lib,
+                                       /opt/homebrew/lib,
+                               );
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
